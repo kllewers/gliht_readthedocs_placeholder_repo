@@ -19,14 +19,14 @@ Lidar Products
 Hyperspectral Products
 -------------------------
 
-* Calibrated surface reflectance imagery (420-950 nm)
+* Calibrated surface reflectance imagery 
 * Ancillary hyperspectral products supporting vegetation composition and
   biophysical/biochemical analysis
 
 Thermal Products
 -------------------
 
-* Calibrated land surface temperature imagery (8-14 micrometers)
+* Calibrated land surface temperature imagery 
 
 Derived / Fused Products
 ----------------------------
@@ -38,13 +38,7 @@ Derived / Fused Products
 Spatial Resolution & Format
 ==============================
 
-All products share a common spatial resolution of approximately 1 meter.
-Products are distributed by flight line/campaign rather than as a single
-continuous mosaic.
 
 Where Products Are Archived
 ==============================
 
-G-LiHT data products are archived and distributed by the NASA Land Processes
-Distributed Active Archive Center (LP DAAC). See :doc:`data_access` for how to
-browse and download them.
