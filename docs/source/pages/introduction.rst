@@ -10,7 +10,7 @@ imaging system developed and operated by NASA's Goddard Space Flight Center
 (GSFC). G-LiHT integrates a scanning lidar, a profiling lidar, an imaging
 spectrometer, an irradiance spectrometer, and a thermal camera onto a single
 airborne platform, enabling simultaneous, coincident measurements of the
-composition, structure, and function of terrestrial ecosystems.
+composition, structure, and function of terrestrial ecosystems using commericial sensors.
 
 Because all sensors fly and collect data together, G-LiHT produces fused,
 co-registered datasets that combine 3D canopy structure (lidar), spectral
@@ -28,6 +28,7 @@ once, providing an analytical framework for developing new algorithms to map:
 
 * Plant species composition and biodiversity
 * Plant functional types
+* Fire fuel loads
 * Canopy structure, biomass, and carbon stocks
 * Vegetation growth, function, and stress
 
