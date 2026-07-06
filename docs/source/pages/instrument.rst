@@ -9,18 +9,26 @@ time.
 LiDAR (Light Detection and Ranging)
 ===============
 
+* Current Model:
+* Previously Used Models:
+* Acquisition Rate:
+* Spatial Resolution:
 
 Imaging Spectrometer (Hyperspectral)
 =====================================
 
+* Current Model:
+* Previously Used Models:
 * Spectral range: 
 * Acquisition rate: 
+* Spatial Resolution:
 * Captures vegetation composition and biophysical/biochemical properties
 
 Irradiance Spectrometer
 =========================
 
-* Spectral range: 
+* Current Model:
+* Previously Used Models:
 * Acquisition rate: 
 * Measures incoming solar irradiance to support reflectance calibration of the
   imaging spectrometer
@@ -28,11 +36,14 @@ Irradiance Spectrometer
 Thermal Camera
 ================
 
-* Swath width: 173 m
-* Acquisition rate: 25
+* Current Model:
+* Previously Used Models:
+* Acquisition rate: 
+* Spatial Resolution:
 * Measures land surface temperature, used to study vegetation function and
   stress
 
-Spatial Resolution
-====================
+Common Gridded Products Info
+=============================
+
 
