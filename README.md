@@ -1,6 +1,6 @@
 # g-liht-docs
 
-This repository serves as documentation for G-LiHT (Goddard's LiDAR, Hyperspectral & Thermal Imager), hosted at [test-gliht.readthedocs.io](https://test-gliht.readthedocs.io/en/latest/index.html).
+This repository serves as documentation for G-LiHT (Goddard's LiDAR, Hyperspectral & Thermal Imager), hosted at [test-gliht.readthedocs.io](https://gliht-readthedocs-placeholder-repo.readthedocs.io/en/latest/pages/instrument.html).
 
 ## Contributing to the G-LiHT Documentation
 To contribute to this documentation you may join the repository as a collaborator by cloning or forking the repository, 
