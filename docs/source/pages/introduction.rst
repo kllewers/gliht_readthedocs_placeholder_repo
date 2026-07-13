@@ -45,9 +45,7 @@ Program Info
 
 * **Principal Investigator:** Bruce Cook (NASA GSFC)
 * **Data Archive:** `glihtdata.gsfc.nasa.gov/files/G-LiHT/ <https://glihtdata.gsfc.nasa.gov/files/G-LiHT/>`_
-* **Funding:** GSFC Internal Research and Development Program, NASA Terrestrial
-  Ecology Program, NASA Carbon Cycle / Carbon Monitoring System Program
+* **Funding:** Check with Bruce
 
-For more background, see the `G-LiHT project page on NASA Earthdata
-<https://www.earthdata.nasa.gov/data/projects/g-liht>`_ and the `G-LiHT site at
+For more background, see the `G-LiHT site at
 NASA GSFC <https://gliht.gsfc.nasa.gov/>`_.
