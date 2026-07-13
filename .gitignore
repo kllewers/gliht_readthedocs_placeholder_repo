@@ -209,4 +209,7 @@ __marimo__/
 
 # Mac OS
 .DS_Store
+
+# Local repo specific folders
 transcripts/
+videos/

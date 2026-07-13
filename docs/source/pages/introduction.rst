@@ -8,9 +8,10 @@ What is G-LiHT?
 Goddard's LiDAR, Hyperspectral & Thermal Imager (G-LiHT) is a portable airborne
 imaging system developed and operated by NASA's Goddard Space Flight Center
 (GSFC). G-LiHT integrates a scanning lidar, a profiling lidar, an imaging
-spectrometer, an irradiance spectrometer, and a thermal camera onto a single
-airborne platform, enabling simultaneous, coincident measurements of the
-composition, structure, and function of terrestrial ecosystems using commericial sensors.
+spectrometer, an irradiance spectrometer, a thermal camera, and Phase One
+RGB cameras onto a single airborne platform, enabling simultaneous, coincident
+measurements of the composition, structure, and function of terrestrial
+ecosystems using commercial sensors.
 
 Because all sensors fly and collect data together, G-LiHT produces fused,
 co-registered datasets that combine 3D canopy structure (lidar), spectral
@@ -43,7 +44,7 @@ Program Info
 ============
 
 * **Principal Investigator:** Bruce Cook (NASA GSFC)
-* **Data Center:** NASA Land Processes Distributed Active Archive Center (LP DAAC)
+* **Data Archive:** `glihtdata.gsfc.nasa.gov/files/G-LiHT/ <https://glihtdata.gsfc.nasa.gov/files/G-LiHT/>`_
 * **Funding:** GSFC Internal Research and Development Program, NASA Terrestrial
   Ecology Program, NASA Carbon Cycle / Carbon Monitoring System Program
 

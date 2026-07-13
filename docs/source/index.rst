@@ -20,4 +20,5 @@ products.
    :caption: Data
 
    pages/data_products
+   pages/processing
    pages/data_access
