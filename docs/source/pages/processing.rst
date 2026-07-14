@@ -62,7 +62,11 @@ structures are not classified, so buildings can sometimes be
 misclassified as ground.
 
 Above-ground-level (AGL) height is calculated for each point and stored
-in the LAS **point source ID** field.
+in the LAS **point source ID** field. Since 2017, G-LiHT flies two LiDAR
+units together; each point in the delivered point cloud is tagged with
+which unit it came from in the LAS **User** field (1 = old unit, 2 = new
+unit). Overlapping swaths are co-aligned using their coincident ground
+returns, to remove swath-to-swath elevation biases before tiling.
 
 Reflectance Calibration
 ----------------------------
@@ -85,7 +89,9 @@ Known Limitations
   readable in LAS 1.4, because RIEGL repurposed that field in the extra
   bytes for their own mirror-characteristic data. This is a known,
   currently-unresolved limitation that requires new LAS read/write code
-  to address.
+  to address. This affects intermediate RIEGL processing — the final
+  point cloud product delivered to users is written out as LAS 1.1
+  (confirmed for both 2014 and 2022 campaigns).
 * LAS 1.4 has become fragmented industry-wide, as vendors (including
   RIEGL) increasingly define their own custom extra-byte formats rather
   than adhering to a shared standard.
@@ -111,9 +117,9 @@ Plot-Scale Metrics
 
 Topographic and LiDAR metrics that require neighborhood statistics are
 computed at **plot scale**, defined as a 13 m grid cell — chosen to match
-the size of a US Forest Service Forest Inventory and Analysis (FIA)
-subplot, since much of G-LiHT's use case ties back to forest inventory
-work.
+the area of a 1/24-acre US Forest Service Forest Inventory and Analysis
+(FIA) subplot, since much of G-LiHT's use case ties back to forest
+inventory work.
 
 LiDAR metrics describe how points are distributed vertically within a
 profile. There are roughly 60 standard metrics computed, addressing the
@@ -125,11 +131,15 @@ density, and number of returns per pulse, among others.
 
 These metrics require a reasonably large, well-sampled area (generally
 100+ points) to be statistically meaningful, which is why they are
-computed at 13 m plot scale rather than 1 m. Metrics are also restricted
-to points within approximately ±15 degrees of nadir (a 30-degree full
-field of view), since wider viewing angles bias metrics like fractional
-cover (a beam looking further off-nadir is less likely to reach the
-ground even with equivalent canopy structure).
+computed at 13 m plot scale rather than 1 m.
+
+Historically (through at least 2014), metrics were restricted to points
+within ±15 degrees of nadir — narrower than the LiDAR's full ±30 degree
+field of view — since wider viewing angles bias metrics like fractional
+cover. As of the 2022 campaigns, this restriction has been relaxed:
+metrics are computed using the full ±30 degree field of view. In both
+cases, the concern is the same: a beam looking further off-nadir is less
+likely to reach the ground even with equivalent canopy structure.
 
 Change Products
 --------------------
