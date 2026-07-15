@@ -181,6 +181,55 @@ G-LiHT's sensors run across two onboard mission computers:
 Common Gridded Products Info
 =============================
 
-*** CONFIRMING A FEW THINGS ***
+*** CONFIRMING WITH BRUCE — content below is drafted from the public data
+archive's file listings, not yet reviewed ***
+
+File Formats
+----------------
+
+Format is not uniform across product types:
+
+* LiDAR-derived rasters (DTM, CHM, DSM, LiDAR metrics, apparent
+  reflectance): **GeoTIFF**
+* VNIR/SWIR hyperspectral cubes: **ENVI format**, not GeoTIFF
+* Point clouds: **ASPRS LAS 1.1**
+* Quicklooks: **Google Earth KML** overlays (available for CHM, DTM,
+  thermal, and the NIR band of hyperspectral imagery)
+* Trajectory: 3D KML plus ASCII at the GPS/IMU sampling rate
+
+Folder Structure and Naming
+--------------------------------
+
+Each campaign in the archive follows the same folder skeleton:
+``hyperspec/{kml, swath}``, ``lidar/{geotiff/{lidar_refl, metrics}, kml,
+las, shp}``, ``metadata/``, ``trajectory/``.
+
+* LiDAR products are packaged as ``<campaign>_<producttype>.tar.gz``
+  (e.g. ``AK_10Jul2014_CHM.tar.gz``).
+* LiDAR metrics and reflectance are split by return-class subset: ``all_``
+  (all returns), ``tree_``, ``ground_``, ``shrub_``, plus a separate
+  ``nmbu_tree_`` decile family (a distinct tree-metric algorithm from the
+  Norwegian University of Life Sciences, bundled alongside the standard
+  "tree" metric set).
+* Hyperspectral swaths are packaged as
+  ``<campaign>_l<line#>s<swath#>_radiance.tar.gz`` and
+  ``..._refl_VIs.tar.gz`` — reflectance and vegetation indices are
+  bundled together per swath, while radiance is packaged separately.
+
+Phase One / RGBI Products Not Yet in the Public Archive
+--------------------------------------------------------------
+
+At least as of the 2022 campaigns checked, Phase One/RGBI orthomosaic
+output does not appear in the public archive's per-campaign folders
+(only ``lidar/``, ``metadata/``, and ``trajectory/`` are present) —
+consistent with :doc:`processing`'s note that this pipeline is still
+under active development.
+
+Related Reference
+----------------------
+
+The archive root has a ``Documents/`` folder containing
+``Transforming_between_vertical_coordinate_systems_and_datums.docx``,
+relevant to the WGS84/EGM96 datum discussion in :doc:`processing`.
 
 
